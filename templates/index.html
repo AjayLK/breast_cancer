@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+              background-image: url('https://www.simplyorganicbeauty.com/wp-content/uploads/2019/10/Ways-Salons-Can-Support-Breast-Cancer-Awareness-Month.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Breast Cancer Prediction</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Navigation</title>
+            <style>
+                .navbar{
+                    background-color: rgb(28, 7, 7);
+                    border-radius: 30px;
+                    
+                }
+                .navbar ul{
+                    overflow: auto;
+                }
+                .navbar li{
+                    float:left;
+                    list-style: none; 
+                    margin: 13px 20px;
+                    
+                }
+                .navbar li a{
+                    padding: 3px 3px;
+                    text-decoration: none;
+                    color: white;
+                }
+                .navbar li a:hover{
+                    color: red
+                }
+                .search{
+                    float: right;
+                    color: white;
+                    padding: 12px 75px;
+                }
+                .navbar input{
+                    border: 2px solid black;
+                    border-radius: 14px;
+                    padding: 3px 17px;
+                    width: 129px;
+                }
+            </style>
+            
+        </head>
+        
+        <body>
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <div class="search">
+                            <input type="text" name="search" id="search" placeholder="Search this website">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+        </body>
+    </head>
+    
+    <body>
+
+    <h1> Breast Cancer Prediction </h1>
+    <form method="GET" action="/predicted_cancer">
+
+        <label>Mean_radius:</label>
+        <input type = "text" name = "mean_radius">
+        </select>
+        <label style="padding: 40px">Mean_Texture:</label>
+        <input type = "text" name = "mean_texture">
+        </select>
+        <label style="padding: 40px">Mean_Perimeter:</label>
+        <input type = "text" name = "mean_perimeter">
+        </select>
+        <label style="padding: 40px">Mean_Area:</label>
+        <input type = "text" name = "mean_area">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Mean_Smoothness:</label>
+        <input type = "text" name = "mean_smoothness">
+        </select>
+        <label style="padding: 40px">Mean_Compactness:</label>
+        <input type = "text" name = "mean_compactness">
+        </select>
+        <label style="padding: 40px">Mean_Concavity:</label>
+        <input type = "text" name = "mean_concavity">
+        </select>
+        <label style="padding: 40px">Mean_Concave_Points:</label>
+        <input type = "text" name = "mean_concave_points">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Mean_Symmetry:</label>
+        <input type = "text" name = "mean_symmetry">
+        </select>
+        <label style="padding: 40px">Mean_Fractal_Dimension:</label>
+        <input type = "text" name = "mean_fractal_dimension">
+        </select>
+        <label style="padding: 40px">Radius_Error:</label>
+        <input type = "text" name = "radius_error">
+        </select>
+        <label style="padding: 40px">Texture_Error:</label>
+        <input type = "text" name = "texture_error">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Perimeter_Error:</label>
+        <input type = "text" name = "perimeter_error">
+        </select>
+        <label style="padding: 40px">Area_Error:</label>
+        <input type = "text" name = "area_error">
+        </select>
+        <label style="padding: 40px">Smoothness_Error:</label>
+        <input type = "text" name = "smoothness_error">
+        </select>
+        <label style="padding: 40px">Compactness_Error:</label>
+        <input type = "text" name = "compactness_error">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Concavity_Error:</label>
+        <input type = "text" name = "concavity_error">
+        </select>
+        <label style="padding: 40px">Concave_Points_Error:</label>
+        <input type = "text" name = "concave_points_error">
+        </select>
+        <label style="padding: 40px">Symmetry_Error:</label>
+        <input type = "text" name = "symmetry_error">
+        </select>
+        <label style="padding: 40px">Fractal_Dimension_Error:</label>
+        <input type = "text" name = "fractal_dimension_error">
+        </select>
+        <br>
+        <br>
+
+        <label>Worst_Radius:</label>
+        <input type = "text" name = "worst_radius">
+        </select>
+        <label style="padding: 40px">Worst_Texture:</label>
+        <input type = "text" name = "worst_texture">
+        </select>
+        <label style="padding: 40px">Worst_Perimeter:</label>
+        <input type = "text" name = "worst_perimeter">
+        </select>
+        <label style="padding: 40px">Worst_Area:</label>
+        <input type = "text" name = "worst_area">
+        </select>
+        <br>
+        <br>
+
+        <label>Worst_Smoothness:</label>
+        <input type = "text" name = "worst_smoothness">
+        </select>
+        <label style="padding: 40px">Worst_Compactness:</label>
+        <input type = "text" name = "worst_compactness">
+        </select>
+        <label style="padding: 40px">Worst_Concavity:</label>
+        <input type = "text" name = "worst_concavity">
+        </select>
+        <label style="padding: 40px">Worst_Concave_Points:</label>
+        <input type = "text" name = "worst_concave_points">
+        </select>
+        <br>
+        <br>
+
+        <label>Worst_Symmetry:</label>
+        <input type = "text" name = "worst_symmetry">
+        </select>
+        <label style="padding: 40px">Worst_Fractal_Dimension:</label>
+        <input type = "text" name = "worst_fractal_dimension">
+        </select>
+        <br>
+        <br>
+
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p><b>Result: {{ prediction }} </b> </p>
+
+    </form>
+
+
+</body>
+</html>
